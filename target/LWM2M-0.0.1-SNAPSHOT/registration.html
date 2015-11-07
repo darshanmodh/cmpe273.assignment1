@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>LWM2M Registration</title>
+	
+	<script src="js/jquery-min.js"></script>
+	<script src="js/polyfill.js"></script>
+	<script src="js/insert.js"></script>
+
+</head>
+<body>
+
+<h1>Registration Interface</h1>
+
+<form id="form_insert_device" name="form_insert_device" action="#">
+<table>
+<tr>
+	<td>Endpoint Name</td>
+	<td><input type="text" name="endpoint_name" id="endpoint_name" maxlength="50" required="required"></td>
+</tr>
+<tr>
+	<td>Manufacturer</td>
+	<td><input type="text" name="manufacturer" id="manufacturer" maxlength="50" required="required"></td>
+</tr>
+<tr>
+	<td>Model Number</td>
+	<td><input type="text" name="modelNumber" id="modelNumber" maxlength="50" required="required"></td>
+</tr>
+<tr>
+	<td>Serial Number</td>
+	<td><input type="text" name="serialNumber" id="serialNumber" maxlength="50" required="required"></td>
+</tr>
+<tr>
+	<td>Device Type</td>
+	<td><input type="text" name="deviceType" id="deviceType" maxlength="20"></td>
+</tr>
+<tr>
+	<td>Hardware Version</td>
+	<td><input type="text" name="hardwareVersion" id="hardwareVersion" maxlength="20"></td>
+</tr>
+<tr>
+	<td>Software Version</td>
+	<td><input type="text" name="softwareVersion" id="softwareVersion" maxlength="20"></td>
+</tr>
+<tr>
+	<td>IP Address</td>
+	<td><input type="text" name="IPaddress" id="IPaddress" maxlength="20" ></td>
+</tr>
+<tr>
+	<td>Current Time</td>
+	<td><input type="text" name="currentTime" id="currentTime" maxlength="20"></td>
+</tr>
+<tr>
+	<td>Current Temperature</td>
+	<td><input type="text" name="currentTemperature" id="currentTemperature" maxlength="20"></td>
+</tr>
+<tr>
+	<td>Current Humidity</td>
+	<td><input type="text" name="currentHumidity" id="currentHumidity" maxlength="20"></td>
+</tr>
+<tr>
+	<td></td>
+	<td><input type="button" name="submit" id="submit" value="Submit"></td>
+</tr>
+</table>
+</form>
+
+<br />
+<div id="div_ajaxResponse"></div>
+
+</body>
+</html>

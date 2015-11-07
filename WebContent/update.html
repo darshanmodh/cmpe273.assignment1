@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>LWM2M Registration</title>
+	
+	<script src="js/jquery-min.js"></script>
+	<script src="js/polyfill.js"></script>
+	<script src="js/put.js"></script>
+</head>
+<body>
+
+<h1>Registration Interface</h1>
+<h3>Update Module</h3>
+
+<div id="get_device"></div>
+
+<br />
+
+<form id="put_example" name="put_example" action="#">
+<table>
+<tr>
+	<td>Manufacturer</td>
+	<td><input type="text" name="manufacturer" id="SET_manufacturer" maxlength="50" ></td>
+</tr>
+<tr>
+	<td>Model Number</td>
+	<td><input type="text" name="modelNumber" id="SET_modelNumber" maxlength="50" ></td>
+</tr>
+<tr>
+	<td>Serial Number</td>
+	<td><input type="text" name="serialNumber" id="SET_serialNumber" maxlength="50" ></td>
+</tr>
+<tr>
+	<td>Device Type</td>
+	<td><input type="text" name="deviceType" id="SET_deviceType" maxlength="20"></td>
+</tr>
+<tr>
+	<td>Hardware Version</td>
+	<td><input type="text" name="hardwareVersion" id="SET_hardwareVersion" maxlength="20"></td>
+</tr>
+<tr>
+	<td>Software Version</td>
+	<td><input type="text" name="softwareVersion" id="SET_softwareVersion" maxlength="20"></td>
+</tr>
+<tr>
+	<td>IP Address</td>
+	<td><input type="text" name="IPaddress" id="SET_IPaddress" maxlength="20" ></td>
+</tr>
+<tr>
+	<td>Current Time</td>
+	<td><input type="text" name="currentTime" id="SET_currentTime" maxlength="20"></td>
+</tr>
+<tr>
+	<td>Current Temperature</td>
+	<td><input type="text" name="currentTemperature" id="SET_currentTemperature" maxlength="20"></td>
+</tr>
+<tr>
+	<td>Current Humidity</td>
+	<td><input type="text" name="currentHumidity" id="SET_currentHumidity" maxlength="20"></td>
+</tr>
+<tr>
+	<td>
+		<input type="hidden" id="endpointName" name="endpointName">
+	</td>
+	<td><input type="submit" name="submit" id="submit" value="Submit"></td>
+</tr>
+</table>
+</form>
+
+<br />
+<div id="update_response"></div>
+
+
+<br /><br />
+</body>
+</html>
